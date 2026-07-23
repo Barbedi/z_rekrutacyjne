@@ -1,8 +1,11 @@
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+    <>
+      <Navigation />
+      <Hero />
+    </>
   );
 };
 
