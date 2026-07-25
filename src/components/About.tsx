@@ -33,7 +33,7 @@ const About = () => {
           </div>
           <div className="flex items-center flex-row gap-9 whitespace-nowrap">
             <button className="bg-transparent text-[#F5F0EC] font-inter font-normal border-2 border-[#F5F0EC] px-5.5 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer">
-                Poznaj nas bliżej
+              Poznaj nas bliżej
               <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
             </button>
           </div>
