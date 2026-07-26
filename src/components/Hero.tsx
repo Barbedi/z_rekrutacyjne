@@ -28,7 +28,7 @@ const Hero = () => {
             <button className="bg-transparent group border-2 border-[#1B5B31] text-[#1B5B31] font-inter font-normal px-6 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer flex items-center gap-2">
               Zobacz nasze realizacje
               <FontAwesomeIcon
-                className="group-hover:translate-y-1 transition-transform duration-300"
+                className="group-hover:animate-bounce transition-transform duration-300"
                 icon={faArrowDown}
               />
             </button>
