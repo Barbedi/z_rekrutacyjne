@@ -16,8 +16,9 @@ const Offer = () => {
               Oferta
             </h1>
 
-            <h2 className="text-5xl text-black font-inter font-normal leading-[115%]">
-              Działamy kompleksowo
+            <h2 className="text-5xl text-black font-montserrat font-medium leading-[115%] tracking-[-3%]">
+              Działamy {" "}
+              <span className="text-black font-inter italic leading-[115%] tracking-0">kompleksowo</span> 
             </h2>
           </div>
           <p className="text-base text-black font-inter font-normal leading-[150%] max-w-xl tracking-[-1%]">
@@ -29,51 +30,48 @@ const Offer = () => {
         </div>
       </div>
       <div className="col-span-12 flex w-full  items-center gap-16 px-22">
-        <div id="projects" className="flex col-auto flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+        <a id="projects" className=" cursor-pointer flex group col-auto flex-col px-10 py-12 bg-white hover:bg-[#1B5B31]/15 gap-3 rounded-[28px] hover:-translate-y-1.5 hover:shadow-xl shadow-[#1B5B31]/30 transition-all duration-300 ease-out ">
           <div className="flex flex-col  gap-8 items-start">
-            <FontAwesomeIcon className="text-black text-5xl" icon={faPencil} />
-            <h1 className="text-[28px] ">Projekty</h1>
+            <FontAwesomeIcon className="text-black group-hover:text-[#1B5B31] text-5xl" icon={faPencil} />
+            <h1 className="text-[28px] font-medium font-montserrat leading-[115%] tracking-[-5%]">Projekty</h1>
           </div>
-          <p className="text-sm text-black font-inter font-normal leading-[150%]">
+          <p className="text-sm text-black font-inter font-normal leading-[150%] tracking-[-1%]">
             Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
             wykorzystaniem istniejącej przestrzeni.
           </p>
-          <a href="" className="text-[#1B5B31] underline mt-auto">
+          <span className="text-[#1B5B31] underline mt-auto font-inter font-normal leading-[150%] ">
             Dowiedz się więcej
-            <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
-          </a>
-        </div>
-        <div id="wizualizacje" className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+            <FontAwesomeIcon className="ml-0.5 group-hover:translate-x-1 transition-transform duration-300" icon={faArrowRight} />
+          </span>
+        </a>
+        <a id="wizualizacje" className="cursor-pointer flex group col-auto flex-col px-10 py-12 bg-white hover:bg-[#1B5B31]/15 gap-3 rounded-[28px] hover:-translate-y-1.5 hover:shadow-xl shadow-[#1B5B31]/30 transition-all duration-300 ease-out">
           <div className="flex flex-col  gap-8 items-start">
-            <FontAwesomeIcon className="text-black text-5xl" icon={faEye} />
-            <h1 className="text-[28px] ">Wizualizacje</h1>
+            <FontAwesomeIcon className="text-black group-hover:text-[#1B5B31] text-5xl" icon={faEye} />
+            <h1 className="text-[28px] font-medium font-montserrat leading-[115%] tracking-[-5%]">Wizualizacje</h1>
           </div>
-          <p className="text-sm text-black font-inter font-normal leading-[150%]">
+          <p className="text-sm text-black font-inter font-normal leading-[150%] tracking-[-1%]">
             Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
             animowanego w technologii 3D.
           </p>
-          <a href="" className="text-[#1B5B31] underline mt-auto">
+          <span className="text-[#1B5B31] underline mt-auto font-inter font-normal leading-[150%] ">
             Dowiedz się więcej
-            <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
-          </a>
-        </div>
-        <div id="realizacje" className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+            <FontAwesomeIcon className="ml-0.5 group-hover:translate-x-1 transition-transform duration-300" icon={faArrowRight} />
+          </span>
+        </a>
+        <a id="realizacje" className="cursor-pointer flex group col-auto flex-col px-10 py-12 bg-white hover:bg-[#1B5B31]/15 gap-3 rounded-[28px] hover:-translate-y-1.5 hover:shadow-xl shadow-[#1B5B31]/30 transition-all duration-300 ease-out">
           <div className="flex flex-col  gap-8 items-start">
-            <FontAwesomeIcon
-              className="text-black text-5xl"
-              icon={faHandSparkles}
-            />
-            <h1 className="text-[28px] ">Realizacje</h1>
+            <FontAwesomeIcon className="text-black group-hover:text-[#1B5B31] text-5xl" icon={faHandSparkles} />
+            <h1 className="text-[28px] font-medium font-montserrat leading-[115%] tracking-[-5%]">Realizacje</h1>
           </div>
-          <p className="text-sm text-black font-inter font-normal leading-[150%]">
+          <p className="text-sm text-black font-inter font-normal leading-[150%] tracking-[-1%]">
             Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
             zaawansowanych technologii.
           </p>
-          <a href="" className="text-[#1B5B31] underline">
+          <span className="text-[#1B5B31] underline mt-auto font-inter font-normal leading-[150%] ">
             Dowiedz się więcej
-            <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
-          </a>
-        </div>
+            <FontAwesomeIcon className="ml-0.5 group-hover:translate-x-1 transition-transform duration-300" icon={faArrowRight} />
+          </span>
+        </a>
       </div>
     </section>
   );
