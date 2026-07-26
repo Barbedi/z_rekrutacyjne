@@ -3,7 +3,7 @@ import photo from "../assets/Photo1.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
   return (
-    <section className="relative grid grid-cols-12 items-center gap-16 bg-[#1B5B31] py-0 ">
+    <section id="o-firmie" className="relative grid grid-cols-12 items-center gap-16 bg-[#1B5B31] py-0 ">
       <div className="flex flex-col col-start-1 col-span-6 items-center">
         <div
           className="h-184.25 w-full bg-cover object-cover object-right"

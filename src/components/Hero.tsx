@@ -8,7 +8,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative grid grid-cols-12 items-center gap-16 bg-[#DCC1AB] py-0">
+    <section id="hero" className="relative grid grid-cols-12 items-center gap-16 bg-[#DCC1AB] py-0">
       <div className="flex flex-col col-start-1 col-span-6 justify-center px-22">
         <div className="flex flex-col gap-18 items-start">
           <div className="flex flex-col gap-11 items-start max-w-xl">
@@ -22,16 +22,16 @@ const Hero = () => {
             </span>
           </div>
           <div className="flex items-center flex-row gap-9 whitespace-nowrap">
-            <button className="bg-[#1B5B31] text-white font-inter font-normal border-2 border-[#1B5B31] px-6 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer">
+            <a href="#kontakt" className="bg-[#1B5B31] text-white font-inter font-normal border-2 border-[#1B5B31] px-6 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer">
               Skontaktuj się z nami
-            </button>
-            <button className="bg-transparent group border-2 border-[#1B5B31] text-[#1B5B31] font-inter font-normal px-6 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer flex items-center gap-2">
+            </a>
+            <a href="#projekty" className="bg-transparent group border-2 border-[#1B5B31] text-[#1B5B31] font-inter font-normal px-6 pt-3 pb-3.5 rounded-[200px] hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer flex items-center gap-2">
               Zobacz nasze realizacje
               <FontAwesomeIcon
                 className="group-hover:animate-bounce transition-transform duration-300"
                 icon={faArrowDown}
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>

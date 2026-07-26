@@ -2,7 +2,7 @@ import photo from "../assets/logo-full-light.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black relative grid grid-cols-12 gap-16 items-center text-[#F5F0EC]">
+    <footer id="footer" className="bg-black relative grid grid-cols-12 gap-16 items-center text-[#F5F0EC]">
       <div className="py-20 px-64 col-span-12 flex flex-col gap-30 ">
         <div>
           <div className="flex flex-row justify-between items-center w-full">

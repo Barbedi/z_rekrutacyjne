@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <nav className="relative grid grid-cols-12 items-center gap-16s py-6 bg-white ">
+    <nav id="navigation" className="relative grid grid-cols-12 items-center gap-16s py-6 bg-white ">
       <div className="col-span-12 col-start-1 flex flex-row justify-between items-center px-22">
         <div className="flex flex-row gap-6 items-center">
           <span className="text-lg">
@@ -38,17 +38,17 @@ const Navigation = () => {
               >
                 <ul className="py-2">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    <a href="#projects" className="block px-4 py-2 hover:bg-gray-100">
                       Projektowanie
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    <a href="#wizualizacje" className="block px-4 py-2 hover:bg-gray-100">
                       Wizualizacje
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    <a href="#realizacje" className="block px-4 py-2 hover:bg-gray-100">
                       Realizacja
                     </a>
                   </li>
@@ -56,17 +56,17 @@ const Navigation = () => {
               </div>
             </li>
             <li>
-              <a href="#" className="hover:opacity-60">
+              <a href="#o-firmie" className="hover:opacity-60">
                 O firmie
               </a>
             </li>
             <li>
-              <a href="#" className="hover:opacity-60">
+              <a href="#projekty" className="hover:opacity-60">
                 Realizacje
               </a>
             </li>
             <li>
-              <a href="#" className="hover:opacity-60">
+              <a href="#kontakt" className="hover:opacity-60">
                 Kontakt
               </a>
             </li>

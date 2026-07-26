@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Offer = () => {
   return (
-    <section className="relative grid grid-cols-12 gap-16 pt-30 pb-40 bg-[#F5F0EC] items-center">
+    <section id="oferta" className="relative grid grid-cols-12 gap-16 pt-30 pb-40 bg-[#F5F0EC] items-center">
       <div className="flex flex-col col-start-3 col-span-7 items-start gap-20">
         <div className="flex flex-col gap-8 items-start">
           <div className="flex flex-col gap-4 max-w-lg">
@@ -29,7 +29,7 @@ const Offer = () => {
         </div>
       </div>
       <div className="col-span-12 flex w-full  items-center gap-16 px-22">
-        <div className="flex col-auto flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+        <div id="projects" className="flex col-auto flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
           <div className="flex flex-col  gap-8 items-start">
             <FontAwesomeIcon className="text-black text-5xl" icon={faPencil} />
             <h1 className="text-[28px] ">Projekty</h1>
@@ -43,7 +43,7 @@ const Offer = () => {
             <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
           </a>
         </div>
-        <div className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+        <div id="wizualizacje" className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
           <div className="flex flex-col  gap-8 items-start">
             <FontAwesomeIcon className="text-black text-5xl" icon={faEye} />
             <h1 className="text-[28px] ">Wizualizacje</h1>
@@ -57,7 +57,7 @@ const Offer = () => {
             <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
           </a>
         </div>
-        <div className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
+        <div id="realizacje" className="flex flex-col px-10 py-12 bg-white gap-3 rounded-[28px]">
           <div className="flex flex-col  gap-8 items-start">
             <FontAwesomeIcon
               className="text-black text-5xl"

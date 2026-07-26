@@ -17,7 +17,6 @@ const Projects = () => {
     "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1170&q=80",
@@ -30,7 +29,7 @@ const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section
-      id="projects"
+      id="projekty"
       className="bg-[#DCC1AB] relative grid grid-cols-12 items-center gap-16 pt-30 pb-11"
     >
       <div className="gap-24 flex flex-col  col-span-12 items-start ">
@@ -46,7 +45,7 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-1000" : "max-h-250"}`}>
+        <div className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-500" : "max-h-250"}`}>
   
           <Masonry
             breakpointCols={3}
@@ -60,15 +59,25 @@ const Projects = () => {
                 className=" w-full object-cover"
               />
             ))}
+            
           </Masonry>
-        </div>
-      </div>
-      <div className="flex flex-col col-span-12 items-center ">
-          <button onClick={() => setIsOpen(!isOpen)} className={`bg-transparent text-black border border-black px-5.5 pt-3 pb-3.5 rounded-[200px] hover:bg-white/50 transition-colors duration-300 cursor-pointer `}>
+        <div className="flex flex-col col-span-12 items-center ">
+          <button onClick={() => setIsOpen(!isOpen)} className={` absolute bottom-10 z-50 items-center bg-transparent text-black border border-black px-5.5 pt-3 pb-3.5 rounded-[200px] hover:shadow-lg hover:translate-y-0.5 transition-all duration-300 cursor-pointer hover:bg-white hover:border-white`}>
             {isOpen ? "Zwiń" : "Rozwiń"}
             <FontAwesomeIcon className={`ml-2 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} icon={faArrowDown} /> 
           </button>
         </div>
+        
+        {!isOpen ? (
+          <div className="absolute inset-0 bg-linear-to-b from-transparent from-50%  to-[#DCC1AB]"></div>
+        )
+        : (
+          <div className="absolute inset-0 bg-linear-to-b from-transparent from-80% to-[#DCC1AB] "></div>
+        )}
+         
+        </div>
+      </div>
+      
     </section>
   );
 };
