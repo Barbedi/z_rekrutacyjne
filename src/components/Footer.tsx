@@ -18,7 +18,7 @@ const Footer = () => {
               <span className="text-[#F5F0EC] font-inter font-normal text-xs lg:text-base leading-[150%]">
                 Daj znać, co możemy dla Ciebie zrobić!
               </span>
-              <button className="bg-[#1B5B31] w-full lg:w-auto text-[#F5F0EC] font-inter font-normal px-2 pt-2 pb-2 lg:px-6 lg:pt-3 lg:pb-3.5 lg:rounded-[200px] rounded-xl transition-colors duration-300 cursor-pointer text-xs ">
+              <button className="bg-[#1B5B31] w-full lg:w-auto text-[#F5F0EC] font-inter font-normal px-2 pt-2 pb-2 lg:px-6 lg:pt-3 lg:pb-3.5 lg:rounded-[200px] rounded-xl transition-colors duration-300 cursor-pointer lg:text-base text-xs ">
                 Skontaktuj się z nami
               </button>
             </div>
