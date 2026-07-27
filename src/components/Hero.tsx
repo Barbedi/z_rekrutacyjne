@@ -13,18 +13,18 @@ const Hero = () => {
       className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-5 lg:gap-16 bg-[#DCC1AB] py-0"
     >
       <div className="flex flex-col col-start-1 col-span-12 lg:col-span-6 justify-center lg:px-22 px-7 order-2 lg:order-1">
-        <div className="flex flex-col lg:gap-18 gap-6 items-start">
-          <div className="flex flex-col lg:gap-11 gap-3 items-start max-w-xl  ">
-            <h1 className="lg:text-6xl text-3xl text-left font-montserrat font-medium  lg:leading-17.5">
-              Nowoczesna aranżacja Twojego ogrodu
+        <div className="flex flex-col lg:gap-18 gap-6 md:gap-12 items-start">
+          <div className="flex flex-col lg:gap-11 md:gap-7 gap-3 items-start max-w-xl  ">
+            <h1 className="lg:text-6xl md:text-4xl text-3xl text-left font-montserrat font-medium  lg:leading-17.5 md:leading-14">
+              Nowoczesna < br className="hidden md:block "/>aranżacja Twojego ogrodu
             </h1>
-            <span className="lg:text-base text-sm text-black font-inter font-normal leading-[150%]">
+            <span className="md:text-base text-sm  text-black font-inter font-normal leading-[150%]">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
               realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
               podejściem do każdego projektu.
             </span>
           </div>
-          <div className="flex items-center lg:flex-row flex-col lg:gap-9 gap-3 lg:whitespace-nowrap mb-5 lg:mb-0 w-full ">
+          <div className="flex items-center md:flex-row flex-col lg:gap-9 gap-3 lg:whitespace-nowrap mb-5 lg:mb-0 w-full ">
             <a
               href="#kontakt"
               className="bg-[#1B5B31] w-full lg:w-auto text-center  text-white font-inter font-normal border-2 border-[#1B5B31] lg:px-6 px-2 lg:pt-3 pt-1 lg:pb-3.5 pb-1.25 lg:rounded-[200px] rounded-xl hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer"

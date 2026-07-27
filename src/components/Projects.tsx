@@ -60,7 +60,7 @@ const Projects = () => {
               <img
                 src={image}
                 alt={`Project ${index + 1}`}
-                className=" w-full object-cover"
+                className=" w-full aspect-video object-cover"
               />
             ))}
           </Masonry>
