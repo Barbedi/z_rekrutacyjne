@@ -4,8 +4,6 @@ import Masonry from "react-masonry-css";
 import { useState } from "react";
 
 const Projects = () => {
-  
-
   const images = [
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1170&q=80",
@@ -26,29 +24,35 @@ const Projects = () => {
     "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1170&q=80",
   ];
 
+  const breakpoint = {
+    default: 3,
+    810: 2,
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section
       id="projekty"
-      className="bg-[#DCC1AB] relative grid grid-cols-12 items-center gap-16 pt-30 pb-11"
+      className="bg-[#DCC1AB] relative grid grid-cols-1 gap-5 pt-10 pb-4 lg:grid-cols-12 items-center lg:gap-16 lg:pt-30 lg:pb-11"
     >
-      <div className="gap-24 flex flex-col  col-span-12 items-start ">
-        <div className="gap-4 flex flex-col  col-span-12 items-start pl-40">
+      <div className="lg:gap-24 gap-6 flex flex-col col-span-4 lg:col-span-12 items-start ">
+        <div className="lg:gap-4 gap-1.5 flex flex-col col-span-4 lg:col-span-12 items-start lg:pl-40 pl-13">
           <span className="text-[#1B5B31] font-inter font-normal text-xs leading-[150%]">
             Realizacje
           </span>
-          <h2 className="text-5xl font-montserrat font-medium leading-[115%] text-black">
+          <h2 className="lg:text-5xl text-2xl font-montserrat font-medium leading-[115%] text-black">
             Nasze{" "}
-            <span className="font-inter font-medium italic text-5xl">
+            <span className="font-inter font-medium italic lg:text-5xl text-2xl">
               projekty
             </span>
           </h2>
         </div>
 
-        <div className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-500" : "max-h-250"}`}>
-  
+        <div
+          className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "lg:max-h-500 xl:max-h-900 xs:max-h-250" : "max-h-250"}`}
+        >
           <Masonry
-            breakpointCols={3}
+            breakpointCols={breakpoint}
             className="flex gap-4 w-auto"
             columnClassName="flex flex-col gap-4 "
           >
@@ -59,25 +63,27 @@ const Projects = () => {
                 className=" w-full object-cover"
               />
             ))}
-            
           </Masonry>
-        <div className="flex flex-col col-span-12 items-center ">
-          <button onClick={() => setIsOpen(!isOpen)} className={` absolute bottom-10 z-50 items-center bg-transparent text-black border border-black px-5.5 pt-3 pb-3.5 rounded-[200px] hover:shadow-lg hover:translate-y-0.5 transition-all duration-300 cursor-pointer hover:bg-white hover:border-white`}>
-            {isOpen ? "Zwiń" : "Rozwiń"}
-            <FontAwesomeIcon className={`ml-2 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} icon={faArrowDown} /> 
-          </button>
-        </div>
-        
-        {!isOpen ? (
-          <div className="absolute inset-0 bg-linear-to-b from-transparent from-50%  to-[#DCC1AB]"></div>
-        )
-        : (
-          <div className="absolute inset-0 bg-linear-to-b from-transparent from-80% to-[#DCC1AB] "></div>
-        )}
-         
+          <div className="flex flex-col col-span-12 items-center ">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={` absolute bottom-10 z-50 items-center bg-transparent text-black border border-black px-5.5 pt-3 pb-3.5 rounded-[200px] hover:shadow-lg hover:translate-y-0.5 transition-all duration-300 cursor-pointer hover:bg-white hover:border-white`}
+            >
+              {isOpen ? "Zwiń" : "Rozwiń"}
+              <FontAwesomeIcon
+                className={`ml-2 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                icon={faArrowDown}
+              />
+            </button>
+          </div>
+
+          {!isOpen ? (
+            <div className="absolute inset-0 bg-linear-to-b from-transparent from-50%  to-[#DCC1AB]"></div>
+          ) : (
+            <div className="absolute inset-0 bg-linear-to-b from-transparent from-80% to-[#DCC1AB] "></div>
+          )}
         </div>
       </div>
-      
     </section>
   );
 };
