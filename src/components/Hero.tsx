@@ -16,7 +16,8 @@ const Hero = () => {
         <div className="flex flex-col lg:gap-18 gap-6 md:gap-12 items-start">
           <div className="flex flex-col lg:gap-11 md:gap-7 gap-3 items-start max-w-xl  ">
             <h1 className="lg:text-6xl md:text-4xl text-3xl text-left font-montserrat font-medium  lg:leading-17.5 md:leading-14">
-              Nowoczesna < br className="hidden md:block "/>aranżacja Twojego ogrodu
+              Nowoczesna <br className="hidden md:block " />
+              aranżacja Twojego ogrodu
             </h1>
             <span className="md:text-base text-sm  text-black font-inter font-normal leading-[150%]">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka

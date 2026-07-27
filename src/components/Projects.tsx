@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Masonry from "react-masonry-css";
 import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const Projects = () => {
   const images = [
@@ -30,6 +32,8 @@ const Projects = () => {
   };
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isPhotoClicked, setIsPhotoClicked] = useState(false);
+  const [index, setIndex] = useState(0);
   return (
     <section
       id="projekty"
@@ -53,17 +57,36 @@ const Projects = () => {
         >
           <Masonry
             breakpointCols={breakpoint}
-            className="flex gap-4 w-auto"
-            columnClassName="flex flex-col gap-4 "
+            className="flex gap-4 w-auto "
+            columnClassName="flex flex-col gap-4"
           >
-            {images.map((image, index) => (
+            {images.map((image, i) => (
               <img
+                key={i}
                 src={image}
-                alt={`Project ${index + 1}`}
-                className=" w-full aspect-video object-cover"
+                alt={`Project ${i + 1}`}
+                className="w-full relative aspect-video object-cover cursor-pointer"
+                onClick={() => {
+                  setIndex(i);
+                  setIsPhotoClicked(true);
+                }}
               />
             ))}
           </Masonry>
+
+          <Lightbox
+            open={isPhotoClicked}
+            styles={{
+              container: {
+                backgroundColor: "transparent",
+                backdropFilter: "blur(10px)",
+              },
+            }}
+            close={() => setIsPhotoClicked(false)}
+            index={index}
+            slides={images.map((image) => ({ src: image }))}
+            plugins={[({ remove }) => remove("no-scroll")]}
+          />
           <div className="flex flex-col col-span-12 items-center ">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -78,9 +101,9 @@ const Projects = () => {
           </div>
 
           {!isOpen ? (
-            <div className="absolute inset-0 bg-linear-to-b from-transparent from-50%  to-[#DCC1AB]"></div>
+            <div className="absolute pointer-events-none  inset-0 bg-linear-to-b from-transparent from-50%  to-[#DCC1AB]"></div>
           ) : (
-            <div className="absolute inset-0 bg-linear-to-b from-transparent from-80% to-[#DCC1AB] "></div>
+            <div className="absolute pointer-events-none inset-0 bg-linear-to-b from-transparent from-80% to-[#DCC1AB] "></div>
           )}
         </div>
       </div>
