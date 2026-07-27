@@ -1,4 +1,4 @@
-import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
@@ -20,8 +20,8 @@ const Contact = () => {
             Śledź nasze <br className="hidden lg:inline" />
             najnowsze realizacje!
           </span>
-          <button className="bg-[#F5F0EC] text-[#1B5B31]  w-1/2 lg:w-auto  text-center font-inter lg:text-base text-xs leading-[150%] font-normal lg:px-6 px-2 py-1 lg:py-3 lg:rounded-[200px] rounded-xl transition-colors duration-300 cursor-pointer hover:bg-opacity-90">
-            <FontAwesomeIcon icon={faInstagram}  />
+          <button className="bg-[#F5F0EC] text-[#1B5B31] hover:shadow-xl hover:shadow-white/70 hover:-translate-y-1 w-1/2 lg:w-auto  text-center font-inter lg:text-base text-xs leading-[150%] font-normal lg:px-6 px-2 py-1 lg:py-3 lg:rounded-[200px] rounded-xl transition-all duration-300 cursor-pointer hover:bg-opacity-90">
+            <FontAwesomeIcon icon={faInstagram} />
             Instagram
           </button>
         </div>

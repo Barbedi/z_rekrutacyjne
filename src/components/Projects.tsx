@@ -24,6 +24,7 @@ const Projects = () => {
     "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1170&q=80",
   ];
 
   const breakpoint = {
