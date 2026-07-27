@@ -35,9 +35,12 @@ const About = () => {
             </p>
           </div>
           <div className="flex items-center flex-row gap-3 lg:gap-9 lg:whitespace-nowrap mb-5 lg:mb-0 w-full ">
-            <button className=" w-full  lg:w-auto bg-transparent text-[#F5F0EC] font-inter font-normal border-2 border-[#F5F0EC] px-2 lg:px-5.5 pt-1 pb-1.25 lg:pt-3 lg:pb-3.5 lg:rounded-[200px] rounded-xl hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer">
+            <button className=" w-full  lg:w-auto bg-transparent text-[#F5F0EC] font-inter font-normal border-2 border-[#F5F0EC] px-2 lg:px-5.5 pt-1 pb-1.25 lg:pt-3 lg:pb-3.5 lg:rounded-[200px] rounded-xl group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer hover:bg-white/30 hover:border-white">
               Poznaj nas bliżej
-              <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
+              <FontAwesomeIcon
+                className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                icon={faArrowRight}
+              />
             </button>
           </div>
         </div>

@@ -53,7 +53,7 @@ const Hero = () => {
 
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
+
     emblaApi.on("select", onSelect);
     return () => {
       emblaApi.off("select", onSelect);
@@ -81,13 +81,13 @@ const Hero = () => {
           <div className="flex items-center md:flex-row flex-col lg:gap-9 gap-3 lg:whitespace-nowrap mb-5 lg:mb-0 w-full">
             <a
               href="#kontakt"
-              className="bg-[#1B5B31] w-full lg:w-auto text-center text-white font-inter font-normal border-2 border-[#1B5B31] lg:px-6 px-2 lg:pt-3 pt-1 lg:pb-3.5 pb-1.25 lg:rounded-[200px] rounded-xl hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer"
+              className="bg-[#1B5B31] w-full lg:w-auto text-center text-white font-inter font-normal border-2 border-[#1B5B31] lg:px-6 px-2 lg:pt-3 pt-1 lg:pb-3.5 pb-1.25 lg:rounded-[200px] rounded-xl hover:bg-[#1B5B31]/80 hover:shadow-xl shadow-[#1B5B31] hover:-translate-y-1 transition-all duration-300 cursor-pointer"
             >
               Skontaktuj się z nami
             </a>
             <a
               href="#projekty"
-              className="w-full lg:w-auto bg-transparent justify-center group border-2 border-[#1B5B31] text-[#1B5B31] font-inter font-normal lg:px-6 px-2 lg:pt-3 pt-1 lg:pb-3.5 pb-1.25 lg:rounded-[200px] rounded-xl hover:shadow-xl shadow-[#1B5B31] transition-colors duration-300 cursor-pointer flex items-center gap-2"
+              className="w-full lg:w-auto bg-transparent justify-center group border-2 border-[#1B5B31] text-[#1B5B31] font-inter font-normal lg:px-6 px-2 lg:pt-3 pt-1 lg:pb-3.5 pb-1.25 lg:rounded-[200px] rounded-xl hover:bg-white/30 hover:shadow-xl shadow-[#1B5B31] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex items-center gap-2"
             >
               Zobacz nasze realizacje
               <FontAwesomeIcon
@@ -110,7 +110,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-row gap-8 px-8 py-6 absolute bottom-0 right-0 bg-[#F5F0EC] z-10">
+        <div className="flex flex-row gap-8 px-3 py-3 md:px-3 md:py-3 lg:px-8 lg:py-6 absolute bottom-0 right-0 bg-[#F5F0EC] z-10">
           <button
             className="justify-center items-center flex cursor-pointer hover:opacity-60 transition-opacity"
             aria-label="Poprzedni slajd"
