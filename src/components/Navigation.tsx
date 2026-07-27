@@ -26,7 +26,7 @@ const Navigation = () => {
           <ul className="flex flex-row gap-12 items-center">
             <li className="relative">
               <a
-                className="flex items-center gap-1 hover:opacity-60"
+                className="flex items-center gap-1 text-sm hover:opacity-60"
                 onClick={() => setIsOpen(!isOpen)}
                 href="#"
               >
@@ -48,7 +48,7 @@ const Navigation = () => {
                   <li>
                     <a
                       href="#projects"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block text-sm px-4 py-2 hover:bg-gray-100"
                     >
                       Projekty
                     </a>
@@ -56,7 +56,7 @@ const Navigation = () => {
                   <li>
                     <a
                       href="#wizualizacje"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block text-sm px-4 py-2 hover:bg-gray-100"
                     >
                       Wizualizacje
                     </a>
@@ -64,7 +64,7 @@ const Navigation = () => {
                   <li>
                     <a
                       href="#realizacje"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block text-sm px-4 py-2 hover:bg-gray-100"
                     >
                       Realizacja
                     </a>
@@ -73,17 +73,17 @@ const Navigation = () => {
               </div>
             </li>
             <li>
-              <a href="#o-firmie" className="hover:opacity-60">
+              <a href="#o-firmie" className="text-sm hover:opacity-60">
                 O firmie
               </a>
             </li>
             <li>
-              <a href="#projekty" className="hover:opacity-60">
+              <a href="#projekty" className="text-sm hover:opacity-60">
                 Realizacje
               </a>
             </li>
             <li>
-              <a href="#kontakt" className="hover:opacity-60">
+              <a href="#kontakt" className="text-sm hover:opacity-60">
                 Kontakt
               </a>
             </li>

@@ -53,7 +53,7 @@ const Projects = () => {
         </div>
 
         <div
-          className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "lg:max-h-500 xl:max-h-900 xs:max-h-250" : "max-h-250"}`}
+          className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "lg:max-h-500 xl:max-h-900 xs:max-h-250" : " max-h-100 md:max-h-250"}`}
         >
           <Masonry
             breakpointCols={breakpoint}
@@ -64,7 +64,7 @@ const Projects = () => {
               <img
                 key={i}
                 src={image}
-                alt={`Project ${i + 1}`}
+                alt={`Projekt ${i + 1}`}
                 className="w-full relative aspect-video object-cover cursor-pointer"
                 onClick={() => {
                   setIndex(i);
