@@ -13,11 +13,11 @@ const Contact = () => {
           </h1>
         </div>
         <div className="lg:col-span-3 col-span-1 flex flex-col lg:gap-6 gap-2 lg:items-start items-center">
-          <span className="text-[#F5F0EC] font-inter font-normal text-base leading-[150%] nowwrap text-center lg:text-left">
-            Śledź nasze 
+          <span className="text-[#F5F0EC] font-inter font-normal text-base leading-[150%] nowrap text-center lg:text-left">
+            Śledź nasze <br className="hidden lg:inline" />
             najnowsze realizacje!
           </span>
-          <button className="bg-[#F5F0EC] text-[#1B5B31] w-1/2 lg:w-full  text-center font-inter lg:text-base text-xs leading-[150%] font-normal lg:px-6 px-2 py-1 lg:py-3 rounded-[200px] transition-colors duration-300 cursor-pointer hover:bg-opacity-90">
+          <button className="bg-[#F5F0EC] text-[#1B5B31]  w-1/2 lg:w-auto  text-center font-inter lg:text-base text-xs leading-[150%] font-normal lg:px-6 px-2 py-1 lg:py-3 lg:rounded-[200px] rounded-xl transition-colors duration-300 cursor-pointer hover:bg-opacity-90">
             Instagram
           </button>
         </div>

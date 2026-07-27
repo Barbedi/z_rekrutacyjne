@@ -9,12 +9,11 @@ const Footer = () => {
       <div className=" py-7 lg:py-20 px-7 lg:px-64 col-span-4 lg:col-span-12 flex flex-col gap-8 lg:gap-30 ">
         <div>
           <div className="flex flex-col lg:flex-row justify-between lg:items-start items-stretch w-full gap-4 lg:gap-0">
-            
-              <span className="lg:text-lg text-md">
-                <span className="font-bold lg:text-lg text-md">giard</span>
-                design
-              </span>
-            
+            <span className="lg:text-lg text-md">
+              <span className="font-bold lg:text-lg text-md">giard</span>
+              design
+            </span>
+
             <div className="flex gap-3 flex-col lg:flex-row lg:gap-6 items-start lg:items-center">
               <span className="text-[#F5F0EC] font-inter font-normal text-xs lg:text-base leading-[150%]">
                 Daj znać, co możemy dla Ciebie zrobić!
